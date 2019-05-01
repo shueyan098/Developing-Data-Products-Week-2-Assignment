@@ -1,0 +1,21 @@
+---
+title: "Developing_Data_Products_Week2_Assignment"
+author: "Eng"
+date: "May 1, 2019"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## `r Sys.Date()`
+
+```{r map, echo=FALSE, warning=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% 
+    addTiles() %>%
+    addMarkers(lat = 39.297993 , lng = -76.630555)
+my_map
+```
